@@ -40,7 +40,7 @@ const NavBarLogin = () => {
                         <NavbarLink
                             style={{
                             }}
-                            to="/locals" onClick={() => { setIsActive(!isActive) }}>
+                            to="/mapa" onClick={() => { setIsActive(!isActive) }}>
                             <LiMenu>MAPA</LiMenu>
                         </NavbarLink>
 
@@ -67,8 +67,15 @@ const NavBarLogin = () => {
                 <NavbarLink
                     style={{
                     }}
-                    to="/locals">
-                    Datos
+                    to="/ranks">
+                    Indice
+                </NavbarLink>
+
+                <NavbarLink
+                    style={{
+                    }}
+                    to="/mapa">
+                    Mapa
                 </NavbarLink>
 
             </DivMenu >

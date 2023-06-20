@@ -1,5 +1,5 @@
 import DropdownInput from '../components/DropdownInput';
-import { DivLocalsTot } from './LocalsDatosLocalsRank.styled';
+import { DivLocalsTot } from './LocalsRank.styled';
 const LocalsRank = () => {
 
     return (

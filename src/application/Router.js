@@ -1,6 +1,6 @@
 import { BrowserRouter, Route, Routes, Outlet } from 'react-router-dom';
 import Home from '../pages/Home';
-import LocalsDatos from '../pages/LocalsDatos';
+//import LocalsDatos from '../pages/LocalsDatos';
 import LocalsRank from '../pages/LocalsRank'
 import ErrPage from '../pages/ErrPage';
 
@@ -12,7 +12,7 @@ const Router = () => (
             <Route element={<LayoutHome />}>
                 <Route path="/" element={<Home />} />
                 <Route path="/ranks" element={<LocalsRank />} />
-                <Route path="/locals" element={<LocalsDatos />} />
+                {/* <Route path="/mapa" element={<LocalsDatos />} /> */}
             </Route>
             <Route element={<Layout />}>
 
