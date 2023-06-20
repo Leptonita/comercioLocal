@@ -30,14 +30,20 @@ const NavBarLogin = () => {
                             to="/" onClick={() => { setIsActive(!isActive) }}>
                             <LiMenu>HOME </LiMenu>
                         </NavbarLink>
+                        <NavbarLink
+                            style={{
+                            }}
+                            to="/ranks" onClick={() => { setIsActive(!isActive) }}>
+                            <LiMenu>INDICE</LiMenu>
+                        </NavbarLink>
 
                         <NavbarLink
                             style={{
                             }}
                             to="/locals" onClick={() => { setIsActive(!isActive) }}>
-                            <LiMenu>DATOS</LiMenu>
+                            <LiMenu>MAPA</LiMenu>
                         </NavbarLink>
-                        
+
                         <br /><br />
                     </DivLoginLeftLinks>
                 )}
@@ -47,7 +53,7 @@ const NavBarLogin = () => {
             <DivImg>
                 <LogoImg src={logo} alt="comerç15" /> <strong >
                     Comerç15'
-                    </strong>
+                </strong>
             </DivImg>
 
             <DivMenu id='menu'>
@@ -64,12 +70,12 @@ const NavBarLogin = () => {
                     to="/locals">
                     Datos
                 </NavbarLink>
-               
+
             </DivMenu >
 
             <DivLoginRight>
-              
-                
+
+
             </DivLoginRight>
             <br />
         </DivBarGridLogin >

@@ -1,6 +1,6 @@
 import DropdownInput from '../components/DropdownInput';
-import { DivLocalsTot } from './LocalsDatos.styled';
-const LocalsDatos = () => {
+import { DivLocalsTot } from './LocalsDatosLocalsRank.styled';
+const LocalsRank = () => {
 
     return (
         <DivLocalsTot>
@@ -8,4 +8,4 @@ const LocalsDatos = () => {
         </DivLocalsTot>
     )
 }
-export default LocalsDatos;
+export default LocalsRank;
