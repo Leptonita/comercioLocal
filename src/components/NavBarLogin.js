@@ -1,5 +1,5 @@
 import { useState } from 'react';
-//import logo from '../assets/img/emwhat.png';
+import logo from '../assets/img/logo.png';
 import { DivBarGridLogin, DivImg, LogoImg, DivLoginRight, DivLogin, DivLoginLeft, DivLoginLeftLinks, MenuMobile, DivUser, DivUserMob } from './NavBar-styled';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
@@ -20,7 +20,7 @@ const NavBarLogin = () => {
 
             <DivLoginLeft>
                 <MenuMobile className='menumobile'>
-                    <FontAwesomeIcon onClick={() => { setIsActive(!isActive) }} icon={faBars} size="2xl" style={{ color: "#008973", }} />
+                    <FontAwesomeIcon onClick={() => { setIsActive(!isActive) }} icon={faBars} size="2xl" style={{ color: "#005792", }} />
                 </MenuMobile>
                 {isActive && (
                     <DivLoginLeftLinks>
@@ -45,7 +45,9 @@ const NavBarLogin = () => {
             </DivLoginLeft>
 
             <DivImg>
-                {/* <LogoImg src={logo} alt="eMWcalc" /> */}
+                <LogoImg src={logo} alt="comerç15" /> <strong >
+                    Comerç15'
+                    </strong>
             </DivImg>
 
             <DivMenu id='menu'>
