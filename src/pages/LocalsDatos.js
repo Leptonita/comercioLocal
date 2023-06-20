@@ -1,8 +1,10 @@
-
+import DropdownInput from '../components/DropdownInput';
 const LocalsDatos = () => {
 
     return (
-        <div>Datos</div>
+        <div>
+            <DropdownInput/>            
+        </div>
     )
 }
 export default LocalsDatos;
