@@ -2,12 +2,14 @@ import "../components/location.css"
 import { MapContainer, TileLayer } from 'react-leaflet'
 import 'leaflet/dist/leaflet.css'
 import { DataBarris } from "./dataBarris"
+import { getLatLongForNeighbourhoods } from "../services/latLongService"
 
 
 export default function Location(){
 
   const center = [41.4032279396013, 2.194621913376098]
-
+  getLatLongForNeighbourhoods()
+ // getLatLong('La Barceloneta')
   
   return(
     <div >
