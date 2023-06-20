@@ -16,7 +16,8 @@ const DropdownInput = () => {
 console.log({inputText});
     return (
         <div>
-
+            
+<label htmlFor="datos"> Buscar barrio para conocer el índice proximidad del comercio. </label>
             <InputDatos type="text" name="datos" placeholder="escribe el nombre del barrio"
              onChange={inputHandler} value={inputText} />
 

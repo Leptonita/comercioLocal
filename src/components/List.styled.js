@@ -35,4 +35,12 @@ background-image: radial-gradient(${props => props.color}, #8800ff25);
 export const DivInfo = styled.div`
 width: 60%;
 margin: 10px auto;
+padding: 20px;
+`;
+
+export const GoodDiv = styled.div`
+color: green;
+`;
+export const BadDiv = styled.div`
+color: red;
 `;

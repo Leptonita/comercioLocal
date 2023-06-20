@@ -1,6 +1,6 @@
 import { React, useState } from 'react'
 import {data} from '../data/datosFake';
-import { DivResults, DivResultScore, Result, DivInfo } from './List.styled';
+import { DivResults, DivResultScore, Result, DivInfo, GoodDiv, BadDiv } from './List.styled';
 
 function List(props) {
 
@@ -26,12 +26,12 @@ function List(props) {
             </DivResultScore>
             <DivInfo>
                 <h1 >{neighbor.name}</h1>
-                {neighbor.fires && <li>"Hay ferias o mercados recurrentes en el barrio"</li>}
-                {neighbor.mercats &&<li>"Hay algun mercado municipal cercano"</li>}
-                {!neighbor.centres && <li>"Hay algun gran centro comercial cercano que puede desequilibrar el tejido comercial"</li>}
-                {neighbor.galeries && <li>"Hay alguna galeria comercial en el barrio"</li>}
-                <li>{neighbor.variacio? "Mucha variedad de comercios al alcance" : "Poca variedad de comercios al alcance"}</li>
-                <li>{neighbor.quotidia? "Alta proporción de comercios de uso cotidiano en el barrio" : "Baja proporción de comercios de uso cotidiano en el barrio"}</li>
+                {neighbor.fires && <GoodDiv>- Hay ferias o mercados recurrentes en el barrio</GoodDiv>}
+                {neighbor.mercats &&<GoodDiv>- Encontrará algún mercado municipal cercano</GoodDiv>}
+                {!neighbor.centres && <BadDiv>- Hay algún gran centro comercial cercano que puede desequilibrar el tejido comercial</BadDiv >}
+                {neighbor.galeries && <GoodDiv>- Hay alguna galeria comercial en el barrio</GoodDiv>}
+                {neighbor.variacio? <GoodDiv>- Mucha variedad de comercios al alcance</GoodDiv> : <BadDiv> - Poca variedad de comercios al alcance</BadDiv>}
+                {neighbor.quotidia? <GoodDiv>- Alta proporción de comercios de uso cotidiano en el barrio</GoodDiv> : <BadDiv>- Baja proporción de comercios de uso cotidiano en el barrio</BadDiv>}
                 
             </DivInfo>
                         
