@@ -1,14 +1,17 @@
 import styled from "styled-components";
 
+
 export const DivResults = styled.div`
 width: 90%;
 margin: 30px auto;
+padding: 30px;
 display: flex;
-
+background-color: rgba(255, 255, 255, 0.9);
+border: 1px dotted blue;
 `;
 
 export const DivResultScore = styled.div`
-width: 40%;
+width: 35%;
 display: flex;
 flex-direction: column;
 align-items: center;
@@ -30,12 +33,20 @@ border-radius: 100%;
 border: 6px dotted #8800ff2a;
 background-color:#005792;
 background-image: radial-gradient(${props => props.color}, #8800ff25);
+@media(max-width: 425px) {
+   height: 80px;
+width: 80px;
+  } 
 `;
 
 export const DivInfo = styled.div`
-width: 60%;
-margin: 10px auto;
-padding: 20px;
+width: 65%;
+margin: 0px 10px;
+padding: 10px 20px 30px 10px;
+
+@media(max-width: 425px) {
+   padding: 10px 10px 30px 20px;
+  } 
 `;
 
 export const GoodDiv = styled.div`
