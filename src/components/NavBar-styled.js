@@ -5,9 +5,9 @@ import { NavLink } from 'react-router-dom';
 //const greyBorder = "#4f4f4f";
 const pinkyBorder = "rgba(255, 99, 132, 0.2)";
 const pinky = "rgba(255, 99, 132, 1)";
-const greeny = "#00a98c";
-const greenyHover = "#008973";
-//const yellowy = "#ffb91d";
+const greeny = "#005F9E";
+const greenyHover = "#359107";
+const yellowy = "#ffb91d";
 
 
 export const DivHeader = styled.div`
@@ -16,19 +16,20 @@ color: #adadad;
 
 export const DivBarGridLogin = styled.div`
 display: grid;
-
+position: relative;
+z-index: 10;
 height: 105px;
 grid-template-columns: 1fr 1fr 7fr 1fr ;
 align-items: center;
 padding: 10px 30px;
-background-color: rgba(255,185,29,0.67);
+background-color: rgba(255,255,255,0);
 border-bottom: 2px solid ${pinkyBorder};
 box-shadow: 2px 2px 9px gray;
 
 
 @media(max-width: 768px) {
 display: flex;
-flex-direction: column;
+flex-direction: column; 
 justify-content: space-between;
 max-width: 100vw;
   }
@@ -40,24 +41,36 @@ grid-template-columns: 1fr 1fr 4fr 1fr ;
 export const DivImg = styled.div`
 display: flex;
 justify-content: center;
+align-items: center;
+flex-wrap: no-wrap;
+font-size: 2rem;
+color: #00589C;
+
+@media(max-width: 768px) {
+  position: relative;
+  display: flex;
+  flex-wrap: no-wrap;
+   max-width: 200px; 
+   font-size: 1.5rem;
+    }
+
 `;
 
 export const LogoImg = styled.img`
-width: 210px ;
+height:100px;
 margin: 0 auto;
+
 @media(max-width: 768px) {
-  position: absolute;
-  top: 11px;
-  margin-left: 50px;
-    min-width: 140px;
-    margin-right: 5px;
-  }
+max-height: 70px;
+  } 
 `;
 
 export const DivLoginLeft = styled.div`
 visibility: hidden;
 
+
 @media(max-width: 768px) {
+  position: absolute;
     visibility: visible;
     display: block;
      width: 100%;
@@ -128,10 +141,13 @@ export const MenuMobile = styled.span`
 display:none;
 color: yellow;
 cursor: pointer;
+width:30px;
+height: 30px;
 
 @media(max-width: 768px) {
 display: flex;
-margin-top: 30px;
+margin-left: 30px;
+margin-top: 20px;
   }
 `;
 
@@ -152,7 +168,7 @@ list-style-type: none;
 
 export const LiMenu = styled.li`
 padding: 5px 25px;
-border-bottom: 2px dotted pink;
+border-bottom: 2px dotted blue;
 background-color: white;
 list-style-type: none;
 `;

@@ -1,5 +1,5 @@
 import { useState } from 'react';
-//import logo from '../assets/img/emwhat.png';
+import logo from '../assets/img/logo.png';
 import { DivBarGridLogin, DivImg, LogoImg, DivLoginRight, DivLogin, DivLoginLeft, DivLoginLeftLinks, MenuMobile, DivUser, DivUserMob } from './NavBar-styled';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
@@ -20,7 +20,7 @@ const NavBarLogin = () => {
 
             <DivLoginLeft>
                 <MenuMobile className='menumobile'>
-                    <FontAwesomeIcon onClick={() => { setIsActive(!isActive) }} icon={faBars} size="2xl" style={{ color: "#008973", }} />
+                    <FontAwesomeIcon onClick={() => { setIsActive(!isActive) }} icon={faBars} size="2xl" style={{ color: "#005792", }} />
                 </MenuMobile>
                 {isActive && (
                     <DivLoginLeftLinks>
@@ -30,14 +30,20 @@ const NavBarLogin = () => {
                             to="/" onClick={() => { setIsActive(!isActive) }}>
                             <LiMenu>HOME </LiMenu>
                         </NavbarLink>
+                        <NavbarLink
+                            style={{
+                            }}
+                            to="/ranks" onClick={() => { setIsActive(!isActive) }}>
+                            <LiMenu>INDICE</LiMenu>
+                        </NavbarLink>
 
                         <NavbarLink
                             style={{
                             }}
-                            to="/locals" onClick={() => { setIsActive(!isActive) }}>
-                            <LiMenu>DATOS</LiMenu>
+                            to="/mapa" onClick={() => { setIsActive(!isActive) }}>
+                            <LiMenu>MAPA</LiMenu>
                         </NavbarLink>
-                        
+
                         <br /><br />
                     </DivLoginLeftLinks>
                 )}
@@ -45,7 +51,9 @@ const NavBarLogin = () => {
             </DivLoginLeft>
 
             <DivImg>
-                {/* <LogoImg src={logo} alt="eMWcalc" /> */}
+                <LogoImg src={logo} alt="comerç15" /> <strong >
+                    Comerç15'
+                </strong>
             </DivImg>
 
             <DivMenu id='menu'>
@@ -59,15 +67,22 @@ const NavBarLogin = () => {
                 <NavbarLink
                     style={{
                     }}
-                    to="/locals">
-                    Datos
+                    to="/ranks">
+                    Indice
                 </NavbarLink>
-               
+
+                <NavbarLink
+                    style={{
+                    }}
+                    to="/mapa">
+                    Mapa
+                </NavbarLink>
+
             </DivMenu >
 
             <DivLoginRight>
-              
-                
+
+
             </DivLoginRight>
             <br />
         </DivBarGridLogin >
