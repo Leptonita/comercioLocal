@@ -1,8 +1,11 @@
+import Location from "../components/location";
 
 const LocalsDatos = () => {
 
     return (
-        <div>Datos</div>
+        <div>Datos
+            <Location />
+        </div>
     )
 }
 export default LocalsDatos;

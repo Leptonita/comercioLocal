@@ -2,12 +2,12 @@ import styled from "styled-components";
 //import logo from '../sw_logo.webp';
 import { NavLink } from 'react-router-dom';
 
-const greyBorder = "#4f4f4f";
+//const greyBorder = "#4f4f4f";
 const pinkyBorder = "rgba(255, 99, 132, 0.2)";
 const pinky = "rgba(255, 99, 132, 1)";
 const greeny = "#00a98c";
 const greenyHover = "#008973";
-const yellowy = "#ffb91d";
+//const yellowy = "#ffb91d";
 
 
 export const DivHeader = styled.div`
