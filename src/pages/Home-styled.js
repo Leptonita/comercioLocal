@@ -25,7 +25,7 @@ background-color: rgba(255, 255, 255, 0.9);
 @media screen and (max-width: 769px){
     font-size: 0.9rem;
     width: 100%;
-    padding: 30px 0 1px 15px;
+    padding: 35px;
 }
 `;
 
