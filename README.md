@@ -1,6 +1,6 @@
 # Comerç15' ::: El comercio de los 15 minutos en Barcelona
 
-## Hackaton Tech4Good, BCN 2023
+## Proyecto seleccionado en la Hackaton Tech4Good, BCN 2023
 
 ### Setup
 
