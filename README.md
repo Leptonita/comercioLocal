@@ -42,7 +42,8 @@ La tabla suministrada por el equipo Data Science se ha transformado en una base 
 
 ### Frontend
 
-La interficie de usuario se ha desarrollado con React, utilizando _styled-components_ para que mediante una entrada de texto el usuario pueda encontrar el barrio de Barcelona que desea consultar. También se han procesado los datos para visualizarlos en un mapa de la ciudad.
+La interficie de usuario se ha desarrollado con React, utilizando _styled-components_.
+El buscador del índice incorpora una entrada de texto filtrada en combinación con Datalist para que al ir escribiendo el usuario pueda encontrar el barrio de Barcelona que desea consultar. También se han procesado los datos para visualizarlos en un mapa de la ciudad, para ello hemos tilizado Leaflet, React Leaflet y OpenStreetMap.
 
 ### Entidades participantes
 
