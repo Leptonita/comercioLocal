@@ -17,7 +17,7 @@ color: #adadad;
 export const DivBarGridLogin = styled.div`
 display: grid;
 position: relative;
-z-index: 10;
+z-index: 100;
 height: 105px;
 grid-template-columns: 1fr 1fr 7fr 1fr ;
 align-items: center;
@@ -190,10 +190,13 @@ transition: all 0.2s ease -in -out;
   color: ${pinky};
   box-shadow: 2px 2p 2px #fffaded2;
 };
+
 @media(max-width: 768px) {
 padding: 15px 5px;
   }
 `;
+
+
 
 export const DivUser = styled.div`
 font-size: 0.7rem;

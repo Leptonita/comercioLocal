@@ -13,11 +13,11 @@ const Home = () => {
 
 
             </DivHome>
-            <ImgHome src={ilustration} alt="Imagen" />
 
+            {/* 
             <DivImg>
-
-            </DivImg>
+                <ImgHome src={ilustration} alt="Imagen" />
+            </DivImg> */}
         </DivContent>
     )
 }
