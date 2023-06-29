@@ -1,6 +1,6 @@
 # Comerç15' ::: El comercio de los 15 minutos en Barcelona
 
-## Proyecto seleccionado en la Hackaton Tech4Good, BCN 2023
+## Hackaton Tech4Good, BCN 2023
 
 ### Setup
 
@@ -42,9 +42,7 @@ La tabla suministrada por el equipo Data Science se ha transformado en una base 
 
 ### Frontend
 
-La interficie de usuario se ha desarrollado con React, utilizando _styled-components_.
-Tras el evento, hemos realizado algunas mejoras de funcionalidad y diseño.
-El buscador del índice incorpora una entrada de texto filtrada en combinación con Datalist para que al ir escribiendo el usuario pueda encontrar el barrio de Barcelona que desea consultar. También se han procesado los datos para visualizarlos en un mapa de la ciudad, para ello hemos utilizado Leaflet, React Leaflet y OpenStreetMap.
+La interficie de usuario se ha desarrollado con React, utilizando _styled-components_ para que mediante una entrada de texto el usuario pueda encontrar el barrio de Barcelona que desea consultar. También se han procesado los datos para visualizarlos en un mapa de la ciudad.
 
 ### Entidades participantes
 

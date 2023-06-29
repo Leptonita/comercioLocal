@@ -32,8 +32,15 @@ const NavBarLogin = () => {
                         <NavbarLink
                             style={{
                             }}
+                            to="/chart" onClick={() => { setIsActive(!isActive) }}>
+                            <LiMenu>GRAFICO</LiMenu>
+                        </NavbarLink>
+
+                        <NavbarLink
+                            style={{
+                            }}
                             to="/ranks" onClick={() => { setIsActive(!isActive) }}>
-                            <LiMenu>INDICE DE PROXIMIDAD</LiMenu>
+                            <LiMenu>BUSCADOR</LiMenu>
                         </NavbarLink>
 
                         <NavbarLink
@@ -66,8 +73,15 @@ const NavBarLogin = () => {
                 <NavbarLink className="menu"
                     style={{
                     }}
+                    to="/chart">
+                    GRÁFICO
+                </NavbarLink>
+
+                <NavbarLink className="menu"
+                    style={{
+                    }}
                     to="/ranks">
-                    INDICE
+                    BUSCADOR
                 </NavbarLink>
 
                 <NavbarLink className="menu"

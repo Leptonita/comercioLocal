@@ -1,7 +1,8 @@
 import { BrowserRouter, Route, Routes, Outlet } from 'react-router-dom';
 import Home from '../pages/Home';
 import LocalsDatos from '../pages/LocalsDatosMap';
-import LocalsDatosIndice from '../pages/LocalsDatosIndice'
+import LocalsDatosIndice from '../pages/LocalsDatosIndice';
+import LocalsDatosChart from '../pages/LocalsDatosChart';
 import ErrPage from '../pages/ErrPage';
 
 import NavBar from '../components/NavBar';
@@ -12,6 +13,7 @@ const Router = () => (
             <Route element={<LayoutHome />}>
                 <Route path="/" element={<Home />} />
                 <Route path="/ranks" element={<LocalsDatosIndice />} />
+                <Route path="/chart" element={<LocalsDatosChart />} />
                 <Route path="/map" element={<LocalsDatos />} />
             </Route>
             <Route element={<Layout />}>

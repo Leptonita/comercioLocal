@@ -9,7 +9,7 @@ justify-content: center;
 text-align: center;
 /* position: relative; */
 width: 100vw;
-min-height: 99vh;
+min-height: calc(100vh - 105px);
 height: 100%;
 background-image: url(${bgfoto});
   background-repeat: repeat;

@@ -2,14 +2,16 @@ import styled from "styled-components";
 
 
 export const DivResults = styled.div`
-width: 90%;
+width: 80%;
 margin: 30px auto;
 padding: 30px;
 display: flex;
 background-color: rgba(255, 255, 255, 0.9);
 border-radius: 25px;
 border: 1px dotted blue;
+
 @media(max-width: 570px) {
+width: 95%;
 flex-direction: column;
 align-items: center;
   } 

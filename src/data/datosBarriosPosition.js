@@ -164,7 +164,7 @@ export const datosBarriosPosition = [
         mercats: false,
         galeries: false,
         centres: false,
-        score: 1.0,
+        score: 1.001,
         position: [41.370241932769495, 2.145130357726517],
     },
     {
