@@ -23,7 +23,7 @@ ChartJS.register(
 
 
 
-const ChartScores = ({ inputScore }) => {
+const ChartScores = ({ inputScore, resultsRef }) => {
 
     const orderedData =
         (inputScore === "0")
@@ -31,7 +31,7 @@ const ChartScores = ({ inputScore }) => {
             : datosBarriosPosition.filter(item =>
                 (item.score == inputScore)).toSorted((a, b) => a.score - b.score)
 
-    console.log({ orderedData })
+    //console.log({ orderedData })
     const options = {
         responsive: true,
         plugins: {
@@ -88,7 +88,7 @@ const ChartScores = ({ inputScore }) => {
 
 
     return (
-        <DivChart>
+        <DivChart ref={resultsRef}>
             <Bar options={options} data={data} height={700} />
         </DivChart>
     )

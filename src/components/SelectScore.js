@@ -1,14 +1,17 @@
+
 import { datosBarriosPosition } from '../data/datosBarriosPosition';
 import { InputNumScores, DivInputNameBarris, DivLeyenda, DivBuscar } from './DropdownInput.styled';
 
-const SelectScore = ({ inputNum, setInputNum }) => {
+const SelectScore = ({ inputNum, setInputNum, resultsRef }) => {
 
     const inputNumHandler = (e) => {
         const num = Number(e.target.value);
-        (num <= 10 && num >= 0)
+        // convertir input num a Number para que "000" sea 0
+        (num <= 10 && num > 0)
             ? setInputNum(e.target.value)
-            : setInputNum("0");
-        if (num.length >= 2 && num != 10) setInputNum("0");
+            : setInputNum("0")
+
+        resultsRef.current.scrollIntoView({ block: "end", behavior: "smooth" });
     }
 
     return (

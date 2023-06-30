@@ -18,7 +18,7 @@ margin: 30px auto 5px auto;
 
 export const InputDatos = styled.input`
 font-size:1.2rem;
-margin: 10px auto;
+margin: 10px;
 padding: 5px;
 min-width: 400px; 
 max-width: 500px;
