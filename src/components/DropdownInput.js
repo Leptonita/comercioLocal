@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { datosBarriosPosition } from '../data/datosBarriosPosition';
-import { InputDatos, DivInputNameBarris, DivLeyenda } from './DropdownInput.styled';
+import { InputDatos, DivInputNameBarris, DivLeyenda, DivBuscar } from './DropdownInput.styled';
 import List from './List';
 
 
@@ -39,18 +39,19 @@ const DropdownInput = () => {
       <br />
       <DivLeyenda>
         Introduce aquí el nombre de tu barrio de Barcelona para conocer su índice de comercio de proximidad, valorado entre 0 y 10 puntos.
-        <br /><br />
-        <label htmlFor="datos"><strong>Buscar:</strong> </label></DivLeyenda>
-      <InputDatos type="text" list="barrios" id="datos" name="datos" placeholder="escribe el nombre del barrio"
-        onChange={inputHandler} onClick={() => setIsClicked(!isClicked)} value={inputText} autoFocus />
-      <datalist id="barrios">
-        {(inputText.length >= 2) &&
-          datosBarriosPosition.map(item => {
-            return <option key={item.id} >{item.name.toLowerCase()}</option>
-          })
-        }
-      </datalist>
-
+        <br /><br /></DivLeyenda>
+      <DivBuscar>
+        <label htmlFor="datos" className="right5"><strong>Buscar por barrio: </strong> </label>
+        <InputDatos type="text" list="barrios" id="datos" name="datos" placeholder="escribe el nombre del barrio"
+          onChange={inputHandler} onClick={() => setIsClicked(!isClicked)} value={inputText} autoFocus />
+        <datalist id="barrios">
+          {(inputText.length >= 2) &&
+            datosBarriosPosition.map(item => {
+              return <option key={item.id} >{item.name.toLowerCase()}</option>
+            })
+          }
+        </datalist>
+      </DivBuscar>
       <List input={inputText} />
 
     </DivInputNameBarris >

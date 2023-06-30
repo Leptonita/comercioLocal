@@ -5,7 +5,7 @@ import { useMap } from 'react-leaflet/hooks';
 //import Marker from '../components/Marker';
 //import Popup from '../components/Popup';
 import { Marker, Popup } from 'react-leaflet';
-import { data, datosBarriosPosition } from '../data/datosBarriosPosition';
+import { datosBarriosPosition } from '../data/datosBarriosPosition';
 
 const LocalsDatos = () => {
     //idBarri has to be greater than 0 to initially show a neigbourhood with score on the map
@@ -40,7 +40,7 @@ const LocalsDatos = () => {
                 <option value="0" defaultValue={'Selecciona un barrio ...'}
                 >Selecciona un barrio ...</option>
                 {
-                    datosBarriosPosition.map((barrio) => <option key={barrio.id} value={(barrio.id)} >{barrio.name} </option>)
+                    datosBarriosPosition.sort((a, b) => a.name > b.name ? 1 : -1).map((barrio) => <option key={barrio.id} value={(barrio.id)} >{barrio.name} </option>)
                 }
             </select >
             <MapContainer center={newCenter} zoom={12} scrollWheelZoom={false} className="map">

@@ -57,6 +57,7 @@ line-height: 1.5rem;
 
 @media(max-width: 570px) {
 width: 100%;
+padding: 2px;
   } 
 `;
 

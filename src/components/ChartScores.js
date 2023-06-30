@@ -20,18 +20,26 @@ ChartJS.register(
     Legend
 );
 
-const orderedData = datosBarriosPosition.toSorted((a, b) => a.score - b.score);
-console.log({ orderedData })
-const ChartScores = () => {
 
+
+
+const ChartScores = ({ inputScore }) => {
+
+    const orderedData =
+        (inputScore === "0")
+            ? datosBarriosPosition.toSorted((a, b) => a.score - b.score)
+            : datosBarriosPosition.filter(item =>
+                (item.score == inputScore)).toSorted((a, b) => a.score - b.score)
+
+    console.log({ orderedData })
     const options = {
         responsive: true,
         plugins: {
             legend: {
-                position: 'top',
+                position: 'bottom',
             },
             title: {
-                display: true,
+                display: false,
                 text: 'INDICE DE PROXIMIDAD',
             },
         },

@@ -17,8 +17,8 @@ body {
 
 h1 {
   color: #005F9E;
-  font-size: 5.7vmin;
-  line-height: 6.1vmin;
+  font-size: 4.7vmin;
+  line-height: 6vmin;
   font-family: 'MuseoModerno', sans-serif;
 }
 
@@ -32,6 +32,13 @@ hr {
   border-top: 1px dotted rgb(0, 115, 255);
 }
 
+.left5 {
+  margin-left: 5px;
+}
+
+.right5 {
+  margin-right: 5px;
+}
 #menu a.active {
   color: #359107;
   text-shadow: 0 0 2px #fff0f7, 0 0 3px #00fff2;
