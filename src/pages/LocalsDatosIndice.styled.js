@@ -16,3 +16,7 @@ background-image: url(${bgfoto});
   background-size: cover;
 
 `;
+
+export const DivMapa = styled.div`
+min-height: calc(100vh - 207px);
+`;
