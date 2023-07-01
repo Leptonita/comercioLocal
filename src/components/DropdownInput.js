@@ -38,7 +38,7 @@ const DropdownInput = () => {
       <h1>Índice de proximidad</h1>
       <br />
       <DivLeyenda>
-        Introduce aquí el nombre de tu barrio de Barcelona para conocer su índice de comercio de proximidad, valorado entre 0 y 10 puntos.
+        Introduce aquí el nombre de tu barrio de Barcelona para conocer su índice de comercio de proximidad, valorado entre 1 y 10 puntos.
         <br /><br /></DivLeyenda>
       <DivBuscar>
         <label htmlFor="datos" className="right5"><strong>Buscar por barrio: </strong> </label>

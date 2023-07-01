@@ -3,7 +3,7 @@ import logo from '../assets/img/logo.png';
 import { DivBarGridLogin, DivImg, LogoImg, DivLoginRight, DivLogin, DivLoginLeft, DivLoginLeftLinks, MenuMobile, DivUser, DivUserMob } from './NavBar-styled';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons';
-
+import { Link } from 'react-router-dom'
 import { DivMenu, LiMenu, NavbarLink } from './NavBar-styled';
 
 
@@ -55,33 +55,35 @@ const NavBarLogin = () => {
                 )}
 
             </DivLoginLeft>
+            <Link to="/" className='noLine'>
+                <DivImg>
 
-            <DivImg>
-                <LogoImg src={logo} alt="comerç15" /> <strong >
-                    Comerç15'
-                </strong>
-            </DivImg>
+                    <LogoImg src={logo} alt="comerç15" /> <strong >
+                        Comerç15'
+                    </strong>
+                </DivImg>
+            </Link>
 
             <DivMenu id='menu'>
-                <NavbarLink className="menu"
+                {/* <NavbarLink className="menu"
                     style={{
                     }}
                     to="/">
                     HOME
-                </NavbarLink>
+                </NavbarLink> */}
 
                 <NavbarLink className="menu"
                     style={{
                     }}
                     to="/chart">
-                    GRÁFICO
+                    INDICE
                 </NavbarLink>
 
                 <NavbarLink className="menu"
                     style={{
                     }}
                     to="/ranks">
-                    BUSCADOR
+                    BARRIO
                 </NavbarLink>
 
                 <NavbarLink className="menu"

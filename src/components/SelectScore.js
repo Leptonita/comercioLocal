@@ -1,5 +1,5 @@
 
-import { datosBarriosPosition } from '../data/datosBarriosPosition';
+
 import { InputNumScores, DivInputNameBarris, DivLeyenda, DivBuscar } from './DropdownInput.styled';
 
 const SelectScore = ({ inputNum, setInputNum, resultsRef }) => {

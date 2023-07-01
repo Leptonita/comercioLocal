@@ -7,7 +7,7 @@ import { useMap } from 'react-leaflet/hooks';
 import { Marker, Popup } from 'react-leaflet';
 import { datosBarriosPosition } from '../data/datosBarriosPosition';
 
-const LocalsDatos = () => {
+const LocalsDatosMap = () => {
     //idBarri has to be greater than 0 to initially show a neigbourhood with score on the map
     const [idBarri, setIdBarri] = useState(10);
     const [position, setPosition] = useState([41.39, 2.17]);
@@ -36,7 +36,7 @@ const LocalsDatos = () => {
 
     return (
         <>
-            <select name="selectBarri" onChange={e => handleChangeSelect(e)}>
+            <select name="selectBarri" onChange={e => handleChangeSelect(e)} className='select'>
                 <option value="0" defaultValue={'Selecciona un barrio ...'}
                 >Selecciona un barrio ...</option>
                 {
@@ -50,7 +50,7 @@ const LocalsDatos = () => {
                 />
                 <Marker position={position}>
                     <Popup>
-                        {nameBarri}<br />tiene un índice de proximidad de: {indexProx}.
+                        <strong> {nameBarri}</strong><br />tiene un índice de proximidad de:   <strong> {indexProx}</strong>.
                     </Popup>
                 </Marker>
             </MapContainer>
@@ -59,4 +59,4 @@ const LocalsDatos = () => {
         </>
     )
 }
-export default LocalsDatos;
+export default LocalsDatosMap;

@@ -3,10 +3,10 @@ import styled from "styled-components";
 import { NavLink } from 'react-router-dom';
 
 const greyBorder = "#4f4f4f";
-const pinkyBorder = "rgba(255, 99, 132, 0.2)";
+const pinkyBorder = "rgba(99, 198, 255, 0.2)";
 const pinky = "rgba(255, 99, 132, 1)";
 const greeny = "#005F9E";
-const greenyHover = "#359107";
+const greenyHover = "#078191";
 const yellowy = "#ffb91d";
 
 
@@ -195,11 +195,11 @@ transition: all 0.2s ease -in -out;
   margin-bottom: -4px;*/
   color: ${greenyHover};
   z-index: 101;
-  text-shadow: 2px 2px 5px rgba(255, 255, 140, 0.7);
+  text-shadow: 2px 2px 5px rgba(140, 253, 255, 0.7);
 }
  &:active{
   color: ${pinky};
-  box-shadow: 2px 2p 2px #fffaded2;
+  box-shadow: 2px 2p 2px #defbffd2;
 };
 
 @media(max-width: 769px) {
