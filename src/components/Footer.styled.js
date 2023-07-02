@@ -14,7 +14,7 @@ margin: 0;
 padding: 46px;
 
 @media(max-width: 430px) {
-padding: 28px;
+padding: 38px;
 justify-content: space-around;
 }
 `;
