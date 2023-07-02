@@ -50,8 +50,8 @@ const LocalsDatosMap = () => {
                     url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                 />
                 <Marker position={position}>
-                    <Popup>
-                        <strong> {nameBarri}</strong><br />tiene un índice de proximidad de:   <strong> {indexProx}</strong>.
+                    <Popup className='pop'>
+                        <strong> {nameBarri}</strong><br /> índice de proximidad:   <strong> {indexProx}</strong>.
                     </Popup>
                 </Marker>
             </MapContainer>
