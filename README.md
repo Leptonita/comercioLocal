@@ -42,7 +42,7 @@ La tabla suministrada por el equipo Data Science se ha transformado en una base 
 
 ### Frontend
 
-La interficie de usuario se ha desarrollado con React, utilizando _styled-components_. En un gráfico de barras (Chart.js) interactivo, mostramos inicialmente los barrios según índice de proximidad, hemos añadido una entrada de texto para realizar consultas concretas. También se puede realizar la búsqueda por barrio. Mediante una entrada de texto combinada con Datalist (a partir del segundo caracter muestra coincidencias) el usuario puede encontrar el barrio de Barcelona que desea consultar, y la información que justifica el valor del índice. Adicionamente se han procesado los datos para visualizarlos en un mapa de la ciudad (Leaflet, React Leaflet, OpenStreetMap ).
+La interficie de usuario se ha desarrollado con React, utilizando _styled-components_. En un gráfico de barras (Chart.js) interactivo, mostramos inicialmente los barrios según índice de proximidad, hemos añadido una entrada de texto para realizar consultas concretas. También se puede realizar la búsqueda por barrio. Mediante una entrada de texto combinada con Datalist (a partir del segundo caracter muestra coincidencias) el usuario puede encontrar el barrio de Barcelona que desea consultar, y la información que justifica el valor del índice. Adicionamente se han procesado los datos para visualizarlos en un mapa de la ciudad (Leaflet, React Leaflet, OpenStreetMap).
 
 ### Entidades participantes
 
